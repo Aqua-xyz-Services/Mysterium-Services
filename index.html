@@ -3,43 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mysterium Services</title> <!-- Updated title -->
+    <title>Mysterium Services</title>
     <style>
-        /* Style for the body */
+        /* General styles */
         body {
-            background-color: #000;
+            background-color: #0e0e0e;
             color: #fff;
             font-family: Arial, sans-serif;
             padding: 20px;
+            text-align: center;
         }
 
-        /* Style for the glowing text */
+        /* Glowing text */
         .glow {
-            font-size: 36px;
-            color: purple; /* Change text color to purple */
-            text-align: center;
-            font-family: Arial, sans-serif;
+            font-size: 48px;
+            color: #ff69b4; /* Hot pink */
             cursor: pointer;
-            animation: glow-animation 1s ease-in-out infinite alternate, glow-purple-animation 1s ease-in-out infinite alternate;
+            animation: glow-animation 1s ease-in-out infinite alternate, glow-pink-animation 1s ease-in-out infinite alternate;
         }
 
         /* Animation for glowing text */
         @keyframes glow-animation {
             from {
                 color: #fff;
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4, 0 0 60px #ff69b4, 0 0 70px #ff69b4;
             }
             to {
-                color: purple;
+                color: #ff69b4;
                 text-shadow: none;
             }
         }
 
-        /* Animation for additional glowing text effect */
-        @keyframes glow-purple-animation {
+        /* Additional animation for glowing text */
+        @keyframes glow-pink-animation {
             from {
-                color: purple;
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple;
+                color: #ff69b4;
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff69b4, 0 0 40px #ff69b4;
             }
             to {
                 color: #fff;
@@ -47,31 +46,25 @@
             }
         }
 
-        /* Style for the glowing button */
+        /* Glowing button */
         .glow-button {
-            display: block;
-            margin: 20px auto 0; /* Adjusted margin to position the button at the bottom */
-            width: 200px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
             background-color: #333;
             color: #fff;
-            font-size: 18px;
+            font-size: 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            animation: glow-blue-animation 1s ease-in-out infinite alternate;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); /* Soft glow effect */
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
 
-        /* Animation for glowing button */
-        @keyframes glow-blue-animation {
-            from {
-                box-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f;
-            }
-            to {
-                box-shadow: none;
-            }
+        /* Hover effect for glowing button */
+        .glow-button:hover {
+            background-color: #555;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); /* Intensified glow effect on hover */
         }
     </style>
 </head>
@@ -80,6 +73,6 @@
     <div class="glow" onclick="window.open('https://discord.gg/Bar5AAD3tN', '_blank')">Mysterium Services</div>
 
     <!-- Glowing button -->
-    <button class="glow-button" onclick="window.open('https://workupload.com/file/xpjgsmKChau', '_blank')">Click to Open</button>
+    <button class="glow-button" onclick="window.open('https://workupload.com/file/xpjgsmKChau', '_blank')">Click to Download</button>
 </body>
 </html>
